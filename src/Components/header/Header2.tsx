@@ -12,7 +12,7 @@ export default function Header2() {
     return (
         <>
 
-            <Navbar expand={'lg'} className="bg-body-tertiary mb-3">
+            <Navbar expand={'lg'} className="bg-body-tertiary">
                 <Container fluid>
                     <Navbar.Brand href="/">Soy FORT</Navbar.Brand>
                     

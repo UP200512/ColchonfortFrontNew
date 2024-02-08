@@ -7,11 +7,11 @@ import Productos from "../Components/Productos/Productos";
 function AuthoRoot() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       {/* <Header /> */}
       <Header2 />
       
-      <Routes>
+      <Routes >
         {/* <Route path="/carta" element={<Carta />}></Route> */}
         <Route
           path="/"

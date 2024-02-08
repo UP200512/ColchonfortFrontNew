@@ -16,37 +16,36 @@ export default function ModalProduct(props: ModalProductProps) {
         <>
             {/* <Button onClick={() => setShow(true)}>Large modal</Button> */}
 
-            <Modal 
+            <Modal
                 shouldCloseOnOverlayClick="true"
-                size="xl"
                 id="exampleModal"
                 show={props.show}
-                onHide={() => props.handleClose}
-                aria-labelledby="example-modal-sizes-title-lg"
+                onHide={props.handleClose}
             >
-                <Modal.Header >
-                    <Modal.Title id="example-modal-sizes-title-lg">
-                        Producto
+                <Modal.Header closeButton className='text-center'>
+                    <Modal.Title>
+                        Ceremony
                     </Modal.Title>
                 </Modal.Header>
-                <Modal.Body className="text-center" style={{ maxHeight: '500px' }}>
+                <Modal.Body className="text-center">
                     <div className="container">
                         <div className="row">
-                            <div className="col-sm-4 overflow-auto" style={{ height: '450px' }}>
-                            <img src={imagen} alt="" className="img-fluid" />
-                            <img src={imagen} alt="" className="img-fluid" />
-                            <img src={imagen} alt="" className="img-fluid" />
-                                </div>
+                            <div className="col-sm-4 overflow-auto h-500"> {/* Usa h-500 para controlar la altura */}
+                                <img src={imagen} alt="" className="img-fluid" />
+                                <img src={imagen} alt="" className="img-fluid" />
+                                <img src={imagen} alt="" className="img-fluid" />
+                            </div>
                             <div className="col-sm-8">
-                            <img src={imagen} alt="" className='img-fluid' />
+                                <img src={imagen} alt="" className='img-fluid' />
                             </div>
                         </div>
                     </div>
-                    <button className="btn btn-dark" onClick={props.handleClose}>
-                        Cerrar Modal
+                    <button className="btn btn-danger" onClick={props.handleClose}>
+                        Cerrar
                     </button>
                 </Modal.Body>
             </Modal>
+
         </>
     );
 }
