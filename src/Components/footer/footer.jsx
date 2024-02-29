@@ -30,7 +30,8 @@ function Footer(){
                 </div>
                 <div className='general'>
                     <h4>Desarrolladores</h4>
-                    <p>Juan Pablo Rodriguez Serna</p>
+                    <p>Juan Pablo Rodriguez</p>
+                    <p>Juan Pablo Rodriguez</p>
                     
                 </div>
                 <div className="otros">
