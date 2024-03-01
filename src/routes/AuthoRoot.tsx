@@ -4,6 +4,7 @@ import About from "../Components/Information/About";
 // import Header from "../Components/header/Header";
 import Header2 from "../Components/header/Header2";
 import Productos from "../Components/Productos/Productos";
+import Footer from "../Components/footer/Footer";
 function AuthoRoot() {
 
   return (
@@ -34,6 +35,7 @@ function AuthoRoot() {
         />
 
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
