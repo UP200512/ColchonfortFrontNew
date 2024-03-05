@@ -1,6 +1,8 @@
-import CardProducto from "./CardProducto"
-import MensajeInicial from "../ComponentesCompartidos/MensajeInicial"
-import AsideFiltros from "./AsideFiltros"
+
+import CardProducto from "../Productos/CardProducto"
+// import MensajeInicial from "../ComponentesCompartidos/MensajeInicial"
+import MensajeInicialAdmin from "../ComponentesCompartidos/MensajeInicialAdmin"
+import AsideFiltros from "../Productos/AsideFiltros"
 const productos = [
     {
         nombre_corto: "Alpha",
@@ -47,7 +49,10 @@ const productos = [
 
 ]
 
-export default function Productos() {
+export default function ProductosAdmin() {
+    
+
+
     return (
         <div className="container">
             <div className="row">
@@ -55,7 +60,8 @@ export default function Productos() {
                     <AsideFiltros />
                 </div>
                 <div className="col">
-                    <MensajeInicial />
+                    {/* <MensajeInicial /> */}
+                    <MensajeInicialAdmin />
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                         {productos.map((item, index) => (
                             <div className="col mb-4" key={index}>
@@ -68,4 +74,3 @@ export default function Productos() {
         </div>
     )
 }
-

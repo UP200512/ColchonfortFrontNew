@@ -42,6 +42,7 @@ export default function Header2() {
 
                                     <NavDropdown.Item href="/productos">Productos</NavDropdown.Item>
                                     <NavDropdown.Item href="productos/lineas">Lineas</NavDropdown.Item>
+                                    <NavDropdown.Item href="productos/administrar">Administrar</NavDropdown.Item>
                                     {/* <NavDropdown title="Tallas" id='tallas'>
                                         <NavDropdown.Item href="#action4">Individual</NavDropdown.Item>
                                         <NavDropdown.Item href="#action4">Matrimonial</NavDropdown.Item>

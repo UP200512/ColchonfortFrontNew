@@ -4,6 +4,7 @@ import About from "../Components/Information/About";
 // import Header from "../Components/header/Header";
 import Header2 from "../Components/header/Header2";
 import Productos from "../Components/Productos/Productos";
+import ProductosAdmin from "../Components/ProductosAdmin/ProductosAdmin";
 function AuthoRoot() {
 
   return (
@@ -30,6 +31,12 @@ function AuthoRoot() {
           path="/productos"
           element={
             <Productos />
+          }
+        />
+        <Route
+          path="/productos/administrar"
+          element={
+            <ProductosAdmin/>
           }
         />
 
