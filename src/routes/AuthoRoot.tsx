@@ -5,6 +5,7 @@ import About from "../Components/Information/About";
 import Header2 from "../Components/header/Header2";
 import Productos from "../Components/Productos/Productos";
 import Footer from "../Components/footer/Footer";
+import Contactanos from "../Components/Contactanos/Contactanos";
 function AuthoRoot() {
 
   return (
@@ -33,7 +34,12 @@ function AuthoRoot() {
             <Productos />
           }
         />
-
+        <Route
+          path="/contacto"
+          element={
+            <Contactanos />
+          }
+        />
       </Routes>
       <Footer/>
     </BrowserRouter>

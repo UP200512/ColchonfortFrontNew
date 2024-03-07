@@ -5,13 +5,12 @@ import "./about.css";
 export default function About() {
   return (
     <div>
-      <div className="about-page-container">
+      <div className="about-page-container grid">
         <div className="row">
-          <div className="col">
-            <AboutHistory />
+          <div className="col-md-9">
             <AboutHistory />
           </div>
-          <div className="col-3">
+          <div className="col-md-3">
             <AboutAside />
           </div>
         </div>
