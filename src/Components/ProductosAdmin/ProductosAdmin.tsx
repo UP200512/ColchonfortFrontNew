@@ -3,6 +3,7 @@ import CardProducto from "../Productos/CardProducto"
 // import MensajeInicial from "../ComponentesCompartidos/MensajeInicial"
 import MensajeInicialAdmin from "../ComponentesCompartidos/MensajeInicialAdmin"
 import AsideFiltros from "../Productos/AsideFiltros"
+import Acciones from "./Acciones"
 const productos = [
     {
         nombre_corto: "Alpha",
@@ -16,36 +17,7 @@ const productos = [
         precio: 629,
         precio_falso: 1256
     },
-    {
-        nombre_corto: "Remedy",
-        descripcion: "Tiene una unidad Pocket que permite que el descanso suba a un nivel inigualable en comparación con las unidades de resortes normales",
-        precio: 629,
-        precio_falso: 1256
-    },
-    {
-        nombre_corto: "Iris",
-        descripcion: "Tiene una unidad Pocket que permite que el descanso suba a un nivel inigualable en comparación con las unidades de resortes normales",
-        precio: 629,
-        precio_falso: 1256
-    },
-    {
-        nombre_corto: "Iris",
-        descripcion: "Tiene una unidad Pocket que permite que el descanso suba a un nivel inigualable en comparación con las unidades de resortes normales",
-        precio: 629,
-        precio_falso: 1256
-    },
-    {
-        nombre_corto: "Remedy",
-        descripcion: "Tiene una unidad Pocket que permite que el descanso suba a un nivel inigualable en comparación con las unidades de resortes normales",
-        precio: 629,
-        precio_falso: 1256
-    },
-    {
-        nombre_corto: "Iris",
-        descripcion: "Tiene una unidad Pocket que permite que el descanso suba a un nivel inigualable en comparación con las unidades de resortes normales",
-        precio: 629,
-        precio_falso: 1256
-    },
+    
 
 ]
 
@@ -57,7 +29,9 @@ export default function ProductosAdmin() {
         <div className="container">
             <div className="row">
                 <div className="col-md-3 mt-3">
-                    <AsideFiltros />
+                    <Acciones />
+                    <AsideFiltros  />
+                    
                 </div>
                 <div className="col">
                     {/* <MensajeInicial /> */}

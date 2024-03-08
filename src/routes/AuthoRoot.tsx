@@ -5,6 +5,8 @@ import About from "../Components/Information/About";
 import Header2 from "../Components/header/Header2";
 import Productos from "../Components/Productos/Productos";
 import ProductosAdmin from "../Components/ProductosAdmin/ProductosAdmin";
+import AgregarProducto from "../Components/ProductosAdmin/AgregarProducto";
+import EditarProducto from "../Components/ProductosAdmin/EditarProducto";
 function AuthoRoot() {
 
   return (
@@ -31,6 +33,18 @@ function AuthoRoot() {
           path="/productos"
           element={
             <Productos />
+          }
+        />
+        <Route
+          path="/productos/administrar/nuevo"
+          element={
+            <AgregarProducto />
+          }
+        />
+        <Route
+          path="/productos/:id"
+          element={
+            <EditarProducto />
           }
         />
         <Route

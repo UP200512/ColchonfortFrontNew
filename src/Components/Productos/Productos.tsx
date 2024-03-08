@@ -49,7 +49,7 @@ const productos = [
 
 export default function Productos() {
     return (
-        <div className="container">
+        <div className="container" >
             <div className="row">
                 <div className="col-md-3 mt-3">
                     <AsideFiltros />

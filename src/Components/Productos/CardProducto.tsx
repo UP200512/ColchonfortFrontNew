@@ -7,7 +7,11 @@ import { CiEdit } from "react-icons/ci";
 
 // import CarouselProductos from "./CarouselProductos";
 function CardProducto(props: any) {
-    const [admin, setAdmin] = useState(false)
+    const handleEdit = (id: number) => {
+        // Redirigir a la URL específica con el ID del producto
+        window.location.href = `/productos/${id}`;
+    }
+    const [admin, setAdmin] = useState(true)
 
 
 
@@ -55,7 +59,7 @@ function CardProducto(props: any) {
                         <div className="row">
                             <div className="col text-center" >
                                 <p className="btn btn-sm btn-outline-primary m-2"><MdAddShoppingCart /></p>
-                                {admin ? <p className="btn btn-sm btn-outline-primary m-2">Editar <CiEdit /></p> : null}
+                                {admin ? <p className="btn btn-sm btn-outline-primary m-2" onClick={()=>handleEdit(15)}>Editar <CiEdit /></p> : null}
                             </div>
 
 
