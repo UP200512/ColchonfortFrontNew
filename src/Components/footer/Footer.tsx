@@ -4,37 +4,37 @@ import { FaCcPaypal } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="footer-about bottom">
-      <div className="container-about-footer">
-        <div className="container-footer-sup row p-2">
-          <div className="col text-center">
-            {" "}
-            <h4>FoRT</h4> Acerca de <br /> Bolsa de trabajo
-          </div>
-          <div className="col text-center">
-            {" "}
-            <h4>Atencion</h4> Acerca de <br /> Bolsa de trabajo{" "}
-          </div>
-          <div className="col text-center">
-            {" "}
-            <h4>Legal</h4> Acerca de <br /> Bolsa de trabajo
-          </div>
+
+    <div className="container-fluid m-0 footer-about">
+      <div className="row p-2">
+        <div className="col-md-4 text-center">
+          <h4>FoRT</h4>
+          <p>Acerca de</p>
+          <p>Bolsa de trabajo</p>
         </div>
-        <div className="container-footer-bot">
-          <div className="row">
-            <div className="col text-center p-1">
-              <h1>
-                <FaCcVisa style={{ marginRight: '10px' }} />
-                <FaCcMastercard style={{ marginRight: '10px' }}/>
-                <FaCcPaypal style={{ marginRight: '10px' }}/>
-              </h1>
-            </div>
-            <div className="col text-center">
-              FoRT Hecho por:
-            </div>
-          </div>
+        <div className="col-md-4 text-center">
+          <h4>Atencion</h4>
+          <p>Acerca de</p>
+          <p>Bolsa de trabajo</p>
+        </div>
+        <div className="col-md-4 text-center">
+          <h4>Legal</h4>
+          <p>Acerca de</p>
+          <p>Bolsa de trabajo</p>
         </div>
       </div>
-    </footer>
+      <div className="row" style={{backgroundColor: "#54574d"}}>
+        <div className="col-md-6 text-center">
+          <h1>
+            <FaCcVisa style={{ marginRight: '10px' }} />
+            <FaCcMastercard style={{ marginRight: '10px' }} />
+            <FaCcPaypal style={{ marginRight: '10px' }} />
+          </h1>
+        </div>
+        <div className="col-md-6 text-center">
+          <p>FoRT Hecho por:</p>
+        </div>
+      </div>
+    </div>
   );
 }

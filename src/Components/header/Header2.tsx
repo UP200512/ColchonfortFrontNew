@@ -41,17 +41,15 @@ export default function Header2() {
                 <Nav.Link href="/informacion">Nosotros</Nav.Link>
                 <Nav.Link href="/materiales">Materiales</Nav.Link>
 
-                <NavDropdown
-                  title="Productos"
-                  id="offcanvasNavbarDropdown-expand-lg"
-                >
-                  <NavDropdown.Item href="/productos">
-                    Productos
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="productos/lineas">
-                    Lineas
-                  </NavDropdown.Item>
-                  {/* <NavDropdown title="Tallas" id='tallas'>
+                                <NavDropdown
+                                    title="Productos"
+                                    id='offcanvasNavbarDropdown-expand-lg'
+                                >
+
+                                    <NavDropdown.Item href="/productos">Productos</NavDropdown.Item>
+                                    <NavDropdown.Item href="/productos/lineas">Lineas</NavDropdown.Item>
+                                    <NavDropdown.Item href="/productos/administrar">Administrar</NavDropdown.Item>
+                                    {/* <NavDropdown title="Tallas" id='tallas'>
                                         <NavDropdown.Item href="#action4">Individual</NavDropdown.Item>
                                         <NavDropdown.Item href="#action4">Matrimonial</NavDropdown.Item>
                                         <NavDropdown.Item href="#action4">Queen Size</NavDropdown.Item>

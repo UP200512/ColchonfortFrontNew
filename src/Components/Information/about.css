@@ -30,48 +30,30 @@ body {
 }
 
 
-.container-about-main {
-  height: 100%;
-  width: 100%; /* Ancho del contenedor */
-  margin: 0 auto; /* Centrar horizontalmente */
-  padding: 20px; /* Espaciado interno */
-  border: 1px solid #ccc; /* Borde */
-  background-color: #faf2f0; /* Color de fondo */
-  border-radius: 3%;
-  font-family: "Font-body"; /* Usa el nombre de la fuente que especificaste en @font-face */
-}
 
-.about-aside-container {
-  right: 0; /* Ajusta la posición horizontal en el lado derecho */
-  height: 100%; /* Asigna la altura completa de la ventana */
-  margin: 0 auto; /* Centrar horizontalmente */
-  padding: 20px; /* Espaciado interno */
-  border: 1px solid #ccc; /* Borde */
-  background-color: #faf2f0; /* Color de fondo */
-  width: 100%; /* Ancho del contenedor */
-  border-radius: 4%;
-}
+
+
 
 .footer-about {
   background-color: #8f8575;
   color: #fff;
-  width: 100%;
+  /* width: 100%; */
   position: bottom;
   bottom: 0;
   left: 0;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
-.container-about {
+/* .container-about {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-}
+} */
 
 .container-footer-bot {
-  margin: 1px;
+  /* margin: 1px; */
   background-color: #54574d;
-  padding: 1px;
+  /* padding: 1px; */
 }
 
 .about-page-container {
