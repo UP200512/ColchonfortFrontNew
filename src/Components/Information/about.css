@@ -20,6 +20,11 @@ h4 {
   font-family: "Font-title";
 }
 
+body {
+  font-family: "Font-body";
+}
+
+
 .custom-first-row {
   font-family: "Font-body";
 }
@@ -75,18 +80,7 @@ h4 {
   margin: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-  .about-page-container {
-    flex-direction: column; /* Cambia la dirección a column para apilar los elementos */
-  }
 
-  .container-about-main,
-  .about-aside-container {
-    width: 100%; /* Cambia el ancho a 100% para ocupar toda la pantalla */
-    max-width: none; /* Elimina el máximo ancho establecido */
-    margin: 0; /* Elimina el margen */
-  }
-}
 
 
 
