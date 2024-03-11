@@ -15,6 +15,7 @@ const List = ({ question, register }:Props) => {
                         required={question.required===false? false : true}
                         min={0} max={question.max}
                         {...register(row.name)}
+                        placeholder={question.placeholder}
                         />
                     
                     

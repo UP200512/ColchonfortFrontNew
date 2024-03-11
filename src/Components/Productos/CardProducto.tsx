@@ -11,7 +11,7 @@ function CardProducto(props: any) {
         // Redirigir a la URL específica con el ID del producto
         window.location.href = `/productos/${id}`;
     }
-    const [admin, setAdmin] = useState(true)
+    const [admin, setAdmin] = useState(false)
 
 
 
@@ -24,7 +24,7 @@ function CardProducto(props: any) {
                     <div className="col text-center">
                         <p className="card-text mr-auto"><b>{props.item.nombre_corto}</b></p>
 
-
+                        <p className="card-text mr-auto">{props.item.descripcion}</p>
                         <div className="accordion" id="accordion">
                             <div className="accordion-item">
                                 <h4 className="accordion-header">
@@ -34,20 +34,11 @@ function CardProducto(props: any) {
                                 </h4>
                                 <div id={"panelsStayOpen-collapse" + props.index} className="accordion-collapse collapse ">
                                     <div className="accordion-body">
-                                        {props.item.descripcion}
+                                    <p className="card-text mr-auto">{props.item.descripcion_larga}</p>
                                     </div>
                                 </div>
                             </div>
-
-
-
                         </div>
-
-
-
-
-
-
                         <p className="card-text mr-auto text-danger text-decoration-line-through"><b>${props.item.precio_falso} MXN</b></p>
                         <p className="card-text mr-auto"><b>${props.item.precio} MXN</b></p>
                         <select className="form-select form-select-sm m-2" aria-label="Small select example">

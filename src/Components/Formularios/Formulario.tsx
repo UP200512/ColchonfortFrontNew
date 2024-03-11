@@ -8,6 +8,7 @@ export interface Question {
     type?: string;
     name?: string;
     title?: string;
+    placeholder?: string;
     required?: boolean;
     equalTo?: string;
     options?: string[];

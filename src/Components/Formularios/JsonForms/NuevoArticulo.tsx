@@ -10,18 +10,21 @@ export function NuevoArticulo() {
                     title: 'Nombre del producto',
                     type: 'text',
                     name: 'nombre',
+                    placeholder: "Nombre del nuevo producto"
                 },
                 {
                     title: 'Descripcion corta',
                     type: 'text',
                     name: 'desripcion_corta',
                     max: 100,
+                    placeholder:"Escribe una pequeña descripción"
                 },
                 {
                     title: 'Descripción larga',
                     type: 'textarea',
                     name: 'desripcion_larga',
-                    max: 300,
+                    placeholder: "Aqui puedes extender las mejores caraterísticas del producto",
+                    max: 500,
                 },
                 {
                     title: 'Categoría',

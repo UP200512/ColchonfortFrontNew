@@ -8,6 +8,7 @@ const EmailInput = ({question, register, watch, errors}: Props) => {
           className='form-control m-1 shadow-sm p-1  bg-body rounded'
           type={question.type || ''}
           name={question.name || ''}
+          placeholder={question.placeholder}
           required={question.required === false ? false : true}
           {...register(question.name, {
             validate: (value:string) => {

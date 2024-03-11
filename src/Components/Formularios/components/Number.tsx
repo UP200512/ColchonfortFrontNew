@@ -12,6 +12,7 @@ const Number = ({question, register}:Props) => {
           min={question.min || ""}
           step={question.step || ""}
           {...register(question.name)}
+          placeholder={question.placeholder}
         />
       </div>
   )

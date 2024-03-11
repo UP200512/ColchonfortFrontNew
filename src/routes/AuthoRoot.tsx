@@ -4,6 +4,8 @@ import About from "../Components/Information/About";
 // import Header from "../Components/header/Header";
 import Header2 from "../Components/header/Header2";
 import Productos from "../Components/Productos/Productos";
+import Footer from "../Components/footer/Footer";
+import Contactanos from "../Components/Contactanos/Contactanos";
 import ProductosAdmin from "../Components/ProductosAdmin/ProductosAdmin";
 import AgregarProducto from "../Components/ProductosAdmin/AgregarProducto";
 import EditarProducto from "../Components/ProductosAdmin/EditarProducto";
@@ -36,6 +38,12 @@ function AuthoRoot() {
           }
         />
         <Route
+          path="/contacto"
+          element={
+            <Contactanos />
+          }
+        />
+        <Route
           path="/productos/administrar/nuevo"
           element={
             <AgregarProducto />
@@ -55,6 +63,7 @@ function AuthoRoot() {
         />
 
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

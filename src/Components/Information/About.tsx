@@ -1,8 +1,20 @@
+import AboutHistory from "./AboutHistory";
+import AboutAside from "./AboutAside";
+import "./about.css";
 
 export default function About() {
   return (
     <div>
-      Pagina de información
+      <div className="about-page-container grid">
+        <div className="row">
+          <div className="col-md-9">
+            <AboutHistory />
+          </div>
+          <div className="col-md-3">
+            <AboutAside />
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }

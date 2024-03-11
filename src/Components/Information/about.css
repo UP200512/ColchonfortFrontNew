@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Font-title";
+  src: url("../../fuentes/Wulkan-Display-Regular.otf") format("opentype"),
+    url("../../fuentes/Wulkan-Display-Medium.otf") format("opentype");
+  /* Asegúrate de especificar las rutas correctas a tus archivos de fuente */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Font-body";
+  src: url("../../fuentes/HankenGrotesk-Regular.ttf") format("truetype"),
+    url("../../fuentes/HankenGrotesk-Medium.ttf") format("truetype");
+  /* Asegúrate de especificar las rutas correctas a tus archivos de fuente */
+  font-weight: normal;
+  font-style: normal;
+}
+
+h4 {
+  font-family: "Font-title";
+}
+
+.custom-first-row {
+  font-family: "Font-body";
+}
+
+
+
+
+
+
+.footer-about {
+  background-color: #8f8575;
+  color: #fff;
+  /* width: 100%; */
+  position: bottom;
+  bottom: 0;
+  left: 0;
+  /* margin-top: 4rem; */
+}
+
+/* .container-about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+} */
+
+.container-footer-bot {
+  /* margin: 1px; */
+  background-color: #54574d;
+  /* padding: 1px; */
+}
+
+.about-page-container {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about-page-container {
+    flex-direction: column; /* Cambia la dirección a column para apilar los elementos */
+  }
+
+  .container-about-main,
+  .about-aside-container {
+    width: 100%; /* Cambia el ancho a 100% para ocupar toda la pantalla */
+    max-width: none; /* Elimina el máximo ancho establecido */
+    margin: 0; /* Elimina el margen */
+  }
+}
+
+
+
+/* Estilos para las columnas dentro del contenedor */
+.custom-contact-column {
+  /* border: 1px dashed #666; Borde punteado de 1px de grosor y color gris */
+  padding: 5px; /* Añade espacio alrededor del contenido dentro de las columnas */
+  margin-bottom: 10px; /* Margen inferior para separar las columnas */
+}
+
+/* Estilos para las filas dentro de las columnas */
+.custom-first-row,
+.custom-second-row,
+.ccustom-contact-row {
+  /* border: 1px dotted #999; Borde de puntos de 1px de grosor y color gris más claro */
+  padding: 3px; /* Añade espacio alrededor del contenido dentro de las filas */
+  margin-bottom: 5px; /* Margen inferior para separar las filas */
+}
+
+

@@ -10,6 +10,7 @@ const Text = ({question, register}:Props) => {
           id={question.name || ''}
           // placeholder={question.name?.toUpperCase()}
           {...register(question.name)}
+          placeholder={question.placeholder}
         />
       </div>
   )
