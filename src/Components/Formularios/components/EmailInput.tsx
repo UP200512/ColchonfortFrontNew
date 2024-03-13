@@ -3,7 +3,7 @@ import { Props } from './SingleQuestion'
 const EmailInput = ({question, register, watch, errors}: Props) => {
   return (
     <div>
-        <label htmlFor={question.name ? question.name : ''} className='form-label'>{question.title}</label>
+        <b><label htmlFor={question.name ? question.name : ''} className='form-label'>{question.title}</label></b>
         <input  
           className='form-control m-1 shadow-sm p-1  bg-body rounded'
           type={question.type || ''}

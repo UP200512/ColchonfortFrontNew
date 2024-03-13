@@ -17,8 +17,9 @@ function CardProducto(props: any) {
 
 
     return (
-        <div className="card d-inline-flex">
-            <img className="card-img-top" src={imagen} alt="Card image cap" />
+        <div className="card d-inline-flex "data-aos="zoom-in" 
+        data-aos-duration="3000">
+            <img className="card-img-top" src={imagen} alt="Card image cap"  />
             <div className="card-body d-flex align-items-end">
                 <div className="container">
                     <div className="col text-center">
@@ -34,23 +35,25 @@ function CardProducto(props: any) {
                                 </h4>
                                 <div id={"panelsStayOpen-collapse" + props.index} className="accordion-collapse collapse ">
                                     <div className="accordion-body">
-                                    <p className="card-text mr-auto">{props.item.descripcion_larga}</p>
+                                        <p className="card-text mr-auto">{props.item.descripcion_larga}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <p className="card-text mr-auto text-danger text-decoration-line-through"><b>${props.item.precio_falso} MXN</b></p>
                         <p className="card-text mr-auto"><b>${props.item.precio} MXN</b></p>
-                        <select className="form-select form-select-sm m-2" aria-label="Small select example">
+                        <select className="form-select form-select-sm m-2" aria-label="Small select example" defaultValue="matrimonial">
                             <option value="individual">Individual</option>
-                            <option value="matrimonial" selected>Matrimonial</option>
+                            <option value="matrimonial">Matrimonial</option>
                             <option value="queen">Queen Size</option>
                             <option value="king">King size</option>
                         </select>
+
+
                         <div className="row">
                             <div className="col text-center" >
                                 <p className="btn btn-sm btn-outline-primary m-2"><MdAddShoppingCart /></p>
-                                {admin ? <p className="btn btn-sm btn-outline-primary m-2" onClick={()=>handleEdit(15)}>Editar <CiEdit /></p> : null}
+                                {admin ? <p className="btn btn-sm btn-outline-primary m-2" onClick={() => handleEdit(15)}>Editar <CiEdit /></p> : null}
                             </div>
 
 

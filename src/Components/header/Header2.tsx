@@ -1,4 +1,5 @@
 import Container from "react-bootstrap/Container";
+import { useState, useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -10,9 +11,37 @@ import { AiOutlineSetting } from "react-icons/ai";
 import { AiOutlinePoweroff } from "react-icons/ai";
 
 export default function Header2() {
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    let lastScrollTop = 0;
+    const header = document.getElementById('mi-header');
+
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        // Desplazándose hacia abajo
+        setVisible(false);
+      } else {
+        // Desplazándose hacia arriba
+        setVisible(true);
+      }
+      
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
     <>
-      <Navbar expand={"lg"} className="bg-body-tertiary">
+      <Navbar expand={"lg"} className={`bg-body-tertiary sticky-top ${visible ? 'visible' : 'invisible'}`}>
         <Container fluid>
           <Navbar.Brand href="/">
             {" "}

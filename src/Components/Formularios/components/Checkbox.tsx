@@ -20,7 +20,7 @@ const Checkbox = ({ question, register }: Props) => {
                         id={question.name || ''}
                         {...register(question.name)}
                         placeholder={option}
-                    />{option}
+                    /><label htmlFor={question.name}>{option}</label>
                 </ div>
 
 

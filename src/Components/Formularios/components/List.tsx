@@ -8,7 +8,7 @@ const List = ({ question, register }:Props) => {
             {question.rows?.map((row, index) => (
                 <div key={index}>
                     
-                        <label htmlFor={row.name ||""} className="form-label">{row.title || ""}</label>
+                        <b><label htmlFor={row.name ||""} className="form-label">{row.title || ""}</label></b>
                         <input className="form-control m-1 shadow-sm p-1  bg-body rounded" name={row.name || "" } 
                         key={index} 
                         type={row.type || ""}
