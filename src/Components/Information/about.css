@@ -16,9 +16,20 @@
   font-style: normal;
 }
 
+.bg-image {
+  background-image: url('../../images/fondo_app_3.jpg');
+  background-size: cover;
+  /* Otros estilos */
+}
+
 h4 {
   font-family: "Font-title";
 }
+
+body {
+  font-family: "Font-body";
+}
+
 
 .custom-first-row {
   font-family: "Font-body";
@@ -50,42 +61,4 @@ h4 {
   background-color: #54574d;
   /* padding: 1px; */
 }
-
-.about-page-container {
-  display: flex;
-  flex-direction: row;
-  margin: 2rem;
-}
-
-@media screen and (max-width: 768px) {
-  .about-page-container {
-    flex-direction: column; /* Cambia la dirección a column para apilar los elementos */
-  }
-
-  .container-about-main,
-  .about-aside-container {
-    width: 100%; /* Cambia el ancho a 100% para ocupar toda la pantalla */
-    max-width: none; /* Elimina el máximo ancho establecido */
-    margin: 0; /* Elimina el margen */
-  }
-}
-
-
-
-/* Estilos para las columnas dentro del contenedor */
-.custom-contact-column {
-  /* border: 1px dashed #666; Borde punteado de 1px de grosor y color gris */
-  padding: 5px; /* Añade espacio alrededor del contenido dentro de las columnas */
-  margin-bottom: 10px; /* Margen inferior para separar las columnas */
-}
-
-/* Estilos para las filas dentro de las columnas */
-.custom-first-row,
-.custom-second-row,
-.ccustom-contact-row {
-  /* border: 1px dotted #999; Borde de puntos de 1px de grosor y color gris más claro */
-  padding: 3px; /* Añade espacio alrededor del contenido dentro de las filas */
-  margin-bottom: 5px; /* Margen inferior para separar las filas */
-}
-
 

@@ -9,10 +9,13 @@ import Contactanos from "../Components/Contactanos/Contactanos";
 import ProductosAdmin from "../Components/ProductosAdmin/ProductosAdmin";
 import AgregarProducto from "../Components/ProductosAdmin/AgregarProducto";
 import EditarProducto from "../Components/ProductosAdmin/EditarProducto";
+import Login from "../Components/Login/Login";
+import Register from "../Components/Register/RegisterForm";
 function AuthoRoot() {
 
   return (
     <BrowserRouter >
+    <div className="bg-image">
       {/* <Header /> */}
       <Header2 />
       
@@ -61,10 +64,23 @@ function AuthoRoot() {
             <ProductosAdmin/>
           }
         />
-
+        <Route
+          path="/login"
+          element={
+            <Login />
+          }
+        />
+        <Route
+         path="/registrate"
+         element={
+          <Register />
+         }
+         />
       </Routes>
       <Footer/>
+      </div>
     </BrowserRouter>
+         
   );
 }
 

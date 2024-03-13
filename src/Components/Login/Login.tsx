@@ -1,0 +1,24 @@
+import Formulario from "../Formularios/Formulario";
+import { LoginForm } from "../Formularios/JsonForms/LoginForm";
+import ForgotLogin from "./ForgotLogin";
+
+function Login() {
+  const ListOfQuestions = LoginForm();
+
+  return (
+    <div className="container mt-3 mb-2">
+      <div className="row d-flex justify-content-center">
+        <div className="col-md-6 mt-3 mb-3 p-3 rounded">
+          <Formulario ListOfQuestions={ListOfQuestions} />
+        </div>
+        <div className="row d-flex justify-content-center">
+                <div className="col-md-6 mt-3 mb-3 p-3 rounded">
+                    <ForgotLogin />
+                </div>
+            </div>
+      </div>
+    </div>
+  );
+}
+
+export default Login;

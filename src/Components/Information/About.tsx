@@ -5,7 +5,7 @@ import "./about.css";
 export default function About() {
   return (
     <div>
-      <div className="about-page-container grid">
+      <div className="container mt-4 mb-4 grid">
         <div className="row">
           <div className="col-md-9">
             <AboutHistory />
