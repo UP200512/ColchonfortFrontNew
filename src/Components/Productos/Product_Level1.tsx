@@ -1,17 +1,18 @@
-import imagen from "../../images/Fotografia Editorial/8.4.jpg"
+import imagen from "../../images/descanso.png"
 
 function Product_Level1() {
-    
+
 
     return (
-        <div className="container text-center p-4" >
+        <div className="container text-center p-4 " data-aos="zoom-in-down" data-aos-duration="3000">
             <div className="row d-flex justify-content-center">
-                <h1>Noche estrellada</h1>
+                <h1>Soy F°RT</h1>
                 <h4>Confort. Descanso. Paz</h4>
-                <img src={imagen} className="img-fluid " alt="Colchon"   style={{maxWidth: "90vh",maxHeight: "90vh"}}/>
+                <img src={imagen} className="img-fluid" alt="Colchon" style={{ height: "90vh" }} />
             </div>
         </div>
     );
+
 }
 
 export default Product_Level1;

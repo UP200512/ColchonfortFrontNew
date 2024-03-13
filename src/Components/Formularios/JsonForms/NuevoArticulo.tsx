@@ -17,7 +17,7 @@ export function NuevoArticulo() {
                     type: 'text',
                     name: 'desripcion_corta',
                     max: 100,
-                    placeholder:"Escribe una pequeña descripción"
+                    placeholder: "Escribe una pequeña descripción"
                 },
                 {
                     title: 'Descripción larga',
@@ -37,6 +37,7 @@ export function NuevoArticulo() {
                         'Opción 4',
                     ],
                 },
+
                 {
                     title: 'Medidas disponibles',
                     type: 'table',
@@ -76,6 +77,79 @@ export function NuevoArticulo() {
 
                     ]
                 },
+
+                
+                {
+                    title: 'Individual: Precio REAL al consumidor',
+                    placeholder: "Precio individual",
+                    type: 'number',
+                    name: 'precio.indi',
+                    hideField: 'medidas.indi',
+                    condition: true
+
+                },
+                {
+                    title: 'Individual: Precio FALSO',
+                    placeholder: "Precio anterior para reflejar promoción",
+                    type: 'number',
+                    name: 'precio_falso.indi',
+                    hideField: 'medidas.indi',
+                    condition: true
+
+                },
+                 {
+                    title: 'Matrimonial: Precio REAL al consumidor',
+                    placeholder: "Precio matrimonial",
+                    type: 'number',
+                    name: 'precio.matri',
+                    hideField: 'medidas.matri',
+                    condition: true
+                }, 
+                {
+                    title: 'Matrimonial: Precio FALSO',
+                    placeholder: "Precio anterior para reflejar promoción",
+                    type: 'number',
+                    name: 'precio_falso.matri',
+                    hideField: 'medidas.matri',
+                    condition: true
+
+                },
+                
+                {
+                    title: 'Queen Size: Precio REAL al consumidor',
+                    placeholder: "Precio Queen Size",
+                    type: 'number',
+                    name: 'precio.queen',
+                    hideField: 'medidas.queen',
+                    condition: true
+                }, 
+                {
+                    title: 'Queen Size: Precio FALSO',
+                    placeholder: "Precio anterior para reflejar promoción",
+                    type: 'number',
+                    name: 'precio_falso.queen',
+                    hideField: 'medidas.queen',
+                    condition: true
+
+                },
+                {
+                    title: 'King Size: Precio REAL al consumidor',
+                    placeholder: "Precio King Size",
+                    type: 'number',
+                    name: 'precio.king',
+                    hideField: 'medidas.king',
+                    condition: true
+                }, 
+                {
+                    title: 'King Size: Precio FALSO',
+                    placeholder: "Precio anterior para reflejar promoción",
+                    type: 'number',
+                    name: 'precio_falso.king',
+                    hideField: 'medidas.king',
+                    condition: true
+
+                },
+                
 
             ]
         },

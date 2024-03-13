@@ -2,7 +2,7 @@ import { Props } from "./SingleQuestion"
 const Number = ({question, register}:Props) => {
   return (
     <div> 
-        <label htmlFor={question.name} className="form-label">{question.title}</label>
+        <b><label htmlFor={question.name} className="form-label">{question.title}</label></b>
         <input type={question.type}
         className="form-control m-1 shadow-sm p-1  bg-body rounded"
           name={question.name}

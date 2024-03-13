@@ -30,12 +30,13 @@ export interface Seccion {
     questions?: Question[]
 }
 interface FormularioProps {
-    ListOfQuestions: Seccion[]; // Asegúrate de importar el tipo Seccion y Question desde tu archivo types.ts
+    ListOfQuestions?: Seccion[]; // Asegúrate de importar el tipo Seccion y Question desde tu archivo types.ts
+    actionSubmit?: Function;
     
 }
 
 
-function Formulario({ ListOfQuestions }: FormularioProps,) {
+function Formulario({ ListOfQuestions, actionSubmit }: FormularioProps,) {
 
     const [current, setCurrent] = useState(0);
 
@@ -44,8 +45,11 @@ function Formulario({ ListOfQuestions }: FormularioProps,) {
     // const ListOfQuestions = TutorFormData();
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = handleSubmit((data) => {
-        // console.log(data);
-        current == ListOfQuestions.length - 1 ? setCurrent(current) : setCurrent(current + 1)
+        console.log(data);
+        
+       actionSubmit()
+        // console.log(res)
+        // current == ListOfQuestions.length - 1 ? setCurrent(current) : setCurrent(current + 1)
     })
     // console.log([current])
     console.log(watch())
@@ -57,7 +61,7 @@ function Formulario({ ListOfQuestions }: FormularioProps,) {
               <h2>{ListOfQuestions[current].section}</h2>
               <form onSubmit={onSubmit}>
                 {ListOfQuestions[current].questions?.map((question, index) => (
-                  <div key={index}>
+                  <div key={index} className="m-2">
                     {(!('hideField' in question) || !question.condition) ||
                       ('hideField' in question && question.condition && watch(question.hideField) === question.condition) ? (
                       <div>
@@ -69,7 +73,7 @@ function Formulario({ ListOfQuestions }: FormularioProps,) {
                 
               </form>
             </section>
-            <div className="d-flex justify-content-end" ><button type="button"className="btn btn-primary m-2 " >Guardar <CiSaveUp2 /></button></div>
+            <div className="d-flex justify-content-end" ><button onClick={onSubmit} type="button"className="btn btn-dark m-2 " >Guardar <CiSaveUp2 /></button></div>
             
           </div>
         );

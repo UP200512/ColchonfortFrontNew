@@ -3,7 +3,7 @@ import {  Props } from './SingleQuestion';
 const SelectInputs = ({ question, register }: Props) => {
   return (
     <div>
-      <label htmlFor={question.name} className='form-label'>{question.title}</label>
+     <b><label htmlFor={question.name} className='form-label'>{question.title}</label></b> 
       <select className="form-control m-1 shadow-sm p-1  bg-body rounded"
         name={question.name}
         id={question.name}
