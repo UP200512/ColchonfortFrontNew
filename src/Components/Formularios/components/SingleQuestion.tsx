@@ -6,6 +6,7 @@ import Checkbox from './Checkbox'
 import TableQuestion from './TableQuestion'
 import EmailInput from './EmailInput'
 import TextAreaInput from './TextAreaInput'
+import Password from './Password'
 import { Question } from '../Formulario'
 
 
@@ -27,6 +28,7 @@ function SingleQuestion({ question, register, watch, errors }:Props ) {
     case 'checkbox': return <Checkbox question={question} register={register} />
     case 'table': return <TableQuestion question={question} register={register} />
     case 'email': return <EmailInput question={question} register={register} errors={errors} watch={watch} />
+    case 'password': return <Password question={question} register={register} />
 
     default: return (
       <div>

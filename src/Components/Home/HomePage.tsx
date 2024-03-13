@@ -5,9 +5,7 @@ import AboutHistory from "../Information/AboutHistory"
 
 export default function HomePage() {
   return (
-    <div style={{
-      backgroundColor: "#f7f7f7"
-    }}>
+    <div>
       
       <Productos />
       <AboutHistory />

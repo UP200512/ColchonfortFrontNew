@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 export default function ContactDetails() {
   return (
     <div className="container text-center p-4">
-      <h4>Detalles</h4>
+      <h4><b>Detalles</b></h4>
       <div className="row p-4 justify-content-around">
         <div className="shadow p-3 mb-5 bg-white rounded col-md-5 mb-3" >
           <h2>

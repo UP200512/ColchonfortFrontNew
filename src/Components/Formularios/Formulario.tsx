@@ -69,7 +69,7 @@ function Formulario({ ListOfQuestions }: FormularioProps,) {
                 
               </form>
             </section>
-            <div className="d-flex justify-content-end" ><button type="button"className="btn btn-primary m-2 " >Guardar <CiSaveUp2 /></button></div>
+            <div className="d-flex justify-content-end" ><button type="button"className="btn btn-dark m-2 " >Guardar <CiSaveUp2 /></button></div>
             
           </div>
         );
