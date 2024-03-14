@@ -2,7 +2,7 @@ import { Props } from "./SingleQuestion"
 const Password = ({question, register}:Props) => {
   return (
     <div>
-        <label htmlFor={question.name || ''} className="form-label" >{question.title || ''}</label>
+        <b><label htmlFor={question.name || ''} className="form-label" >{question.title || ''}</label></b>
         <input className="form-control m-1 shadow-sm p-1  bg-body rounded" type={question.type || ''}
         maxLength={question.max} 
           name={question.name || ''}

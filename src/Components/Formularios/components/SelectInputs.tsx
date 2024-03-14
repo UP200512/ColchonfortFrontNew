@@ -10,9 +10,11 @@ const SelectInputs = ({ question, register }: Props) => {
         required={question.required===false? false : true}
         {...register(question.name)}
       >
-        {question.options?.map((option, index) => (
-          <option key={index} value={option}>
-            {option}
+        
+        {question?.options?.map((option: any, index: number) => (
+          
+          <option key={index} value={option.idcategoria}>
+            {option.nombre}
           </option>
         ))}
       </select>
