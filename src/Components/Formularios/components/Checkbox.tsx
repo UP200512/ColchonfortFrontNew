@@ -8,7 +8,7 @@ import { Question } from "../Formulario";
 const Checkbox = ({ question, register }: Props) => {
     return (
         <div>
-            <label  className="form-label">{question.title}</label>
+            {/* <label  className="form-label">{question.title}</label> */}
             {question.options?.map((option:any, index: number) => (
                 <div key={index}>
                     

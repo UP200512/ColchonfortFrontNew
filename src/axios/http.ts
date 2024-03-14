@@ -15,6 +15,14 @@ export function getProductos() {
         })
         .catch((error) => { return error })
 }
+export async function getCategoriaDelProducto() {
+    try {
+        const res = await api.get('/productos/categorias');
+        return res.data;
+    } catch (error) {
+        throw error;
+    }
+}
 
 export function CreateProduct(data: any) {
     api.post('/productos', data)
