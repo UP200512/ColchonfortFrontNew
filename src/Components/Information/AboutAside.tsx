@@ -4,7 +4,7 @@ export default function AboutAside() {
   return (
     <div>
       <br />
-      <div className="about-aside-container shadow-lg p-3 mb-5 bg-white rounded">
+      <div className="about-aside-container  shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-left" data-aos-duration="3000">
         <div className="about-aside-content">
           <section>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.

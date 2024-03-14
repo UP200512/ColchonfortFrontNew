@@ -36,7 +36,7 @@ export function RegisterForm() {
                     placeholder: "Ingresa tu contraseña"
                 },
                 {
-                    title: 'Conformar contraseña',
+                    title: 'Confirmar contraseña',
                     type: 'password',
                     name: 'password_validate',
                     placeholder: "Confirma tu contraseña",

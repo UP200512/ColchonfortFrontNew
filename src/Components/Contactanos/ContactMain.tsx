@@ -3,7 +3,9 @@ import ContactFormPlus from "./ContactFormPlus";
 
 export default function ContactMain() {
   return (
-    <div className="container p-4">
+    <div className="container p-4" data-aos="fade-zoom-in"
+    data-aos-delay="3000"
+    data-aos-offset="0">
       <div className="shadow p-3 mb-5 bg-white rounded container-fluid p-5">
         <h4>Contactanos...</h4>
         {/* Contenedor "Principal" */}

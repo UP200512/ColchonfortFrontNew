@@ -1,11 +1,11 @@
 import "./about.css";
 export default function AboutHistory() {
   return (
-    <div className="container">
+    <div className="container" data-aos="fade-right" data-aos-duration="3000">
     <br />
     <div className="row">
       <div className="col">
-        <div className="shadow-lg p-3 mb-5 bg-white rounded">
+        <div className="shadow-lg p-3 mb-5 bg-white rounded" >
           <h4>¿Quiénes somos?</h4>
           <br />
           <h5>Propósito</h5>
