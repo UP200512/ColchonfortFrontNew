@@ -11,6 +11,8 @@ import AgregarProducto from "../Components/ProductosAdmin/AgregarProducto";
 import EditarProducto from "../Components/ProductosAdmin/EditarProducto";
 import Login from "../Components/Login/Login";
 import Register from "../Components/Register/RegisterForm";
+import Materiales from "../Components/Materiales/Materiales";
+
 import ImagesView from "../Components/ProductosAdmin/ImagesView";
 function AuthoRoot() {
 
@@ -81,6 +83,12 @@ function AuthoRoot() {
          path="/registrate"
          element={
           <Register />
+         }
+         />
+         <Route
+         path="/materiales"
+         element={
+          <Materiales />
          }
          />
       </Routes>
