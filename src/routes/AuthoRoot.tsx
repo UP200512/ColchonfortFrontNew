@@ -11,6 +11,7 @@ import AgregarProducto from "../Components/ProductosAdmin/AgregarProducto";
 import EditarProducto from "../Components/ProductosAdmin/EditarProducto";
 import Login from "../Components/Login/Login";
 import Register from "../Components/Register/RegisterForm";
+import ImagesView from "../Components/ProductosAdmin/ImagesView";
 function AuthoRoot() {
 
   return (
@@ -50,6 +51,12 @@ function AuthoRoot() {
           path="/productos/administrar/nuevo"
           element={
             <AgregarProducto />
+          }
+        />
+        <Route
+          path="/productos/administrar/images/:idproducto"
+          element={
+            <ImagesView />
           }
         />
         <Route

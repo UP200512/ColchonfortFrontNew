@@ -1,12 +1,19 @@
 // import imagen from "./../../images/Fotografia Editorial/1.1.jpg"
-import { useState } from "react";
-import imagen from "./../../images/Fotografia Editorial/8.4.jpg"
+import { useState, useEffect } from "react";
+// import imagen from "./../../images/Fotografia Editorial/8.4.jpg"
 // import { useState } from "react";
 import { MdAddShoppingCart } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
+import { GetIamges } from "../../axios/hostingAPI";
 
 // import CarouselProductos from "./CarouselProductos";
 function CardProducto(props: any) {
+    const [list, setList]= useState<string[]>([])
+    useEffect(()=>{
+        console.log(props.item)
+        const listaImagenes= GetIamges(props.item.id)
+        console.log(listaImagenes)
+    }, [])
     const handleEdit = (id: number) => {
         // Redirigir a la URL específica con el ID del producto
         window.location.href = `/productos/${id}`;
@@ -19,11 +26,11 @@ function CardProducto(props: any) {
     return (
         <div className="card d-inline-flex "data-aos="zoom-in" 
         data-aos-duration="3000">
-            <img className="card-img-top" src={imagen} alt="Card image cap"  />
+            <img className="card-img-top" src={'http://localhost/api/imagenes/28/0.jpg'} alt="Card image cap"  />
             <div className="card-body d-flex align-items-end">
                 <div className="container">
                     <div className="col text-center">
-                        <p className="card-text mr-auto"><b>{props.item.nombre_corto}</b></p>
+                        <p className="card-text mr-auto"><b>{props.item.nombre}</b></p>
 
                         <p className="card-text mr-auto">{props.item.descripcion}</p>
                         <div className="accordion" id="accordion">

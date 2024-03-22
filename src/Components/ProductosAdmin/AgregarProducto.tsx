@@ -20,8 +20,6 @@ function AgregarProducto() {
         fetchPreguntas();
     }, []);
 
-    const ListaPreguntas = NuevoArticulo();
-
     return (
         <div className="container mt-3 mb-2">
             <div className="row d-flex justify-content-center">

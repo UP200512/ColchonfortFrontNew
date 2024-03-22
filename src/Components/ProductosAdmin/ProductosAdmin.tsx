@@ -4,22 +4,8 @@ import CardProducto from "../Productos/CardProducto"
 import MensajeInicialAdmin from "../ComponentesCompartidos/MensajeInicialAdmin"
 import AsideFiltros from "../Productos/AsideFiltros"
 import Acciones from "./Acciones"
-const productos = [
-    {
-        nombre_corto: "Alpha",
-        descripcion: "tiene una unidad Pocket que permite que el descanso suba a un nivel inigualable en comparación con las unidades de resortes normales",
-        precio: 598,
-        precio_falso: 839
-    },
-    {
-        nombre_corto: "Iris",
-        descripcion: "Tiene una unidad Pocket que permite que el descanso suba a un nivel inigualable en comparación con las unidades de resortes normales",
-        precio: 629,
-        precio_falso: 1256
-    },
-    
-
-]
+import { getProductos } from "../../axios/http"
+const productos = await  getProductos()
 
 export default function ProductosAdmin() {
     
@@ -37,7 +23,7 @@ export default function ProductosAdmin() {
                     {/* <MensajeInicial /> */}
                     <MensajeInicialAdmin />
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
-                        {productos.map((item, index) => (
+                        {productos.map((item:any, index:number) => (
                             <div className="col mb-4" key={index}>
                                 <CardProducto item={item} index={index} />
                             </div>
