@@ -4,7 +4,11 @@ export default function AboutAside() {
   return (
     <div>
       <br />
-      <div className="about-aside-container  shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-left" data-aos-duration="3000">
+      <div
+        className="about-aside-container  shadow-lg p-3 mb-5 bg-white rounded"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         <div className="about-aside-content">
           <section>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -19,7 +23,7 @@ export default function AboutAside() {
             nobis obcaecati numquam doloribus nesciunt, laboriosam repellat
             asperiores a earum tempore voluptas.
           </section>
-          <br/>
+          <br />
         </div>
       </div>
     </div>

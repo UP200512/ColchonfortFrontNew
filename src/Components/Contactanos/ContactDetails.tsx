@@ -4,16 +4,16 @@ import { MdEmail } from "react-icons/md";
 export default function ContactDetails() {
   return (
     <div className="container text-center p-4">
-      <h4><b>Detalles</b></h4>
+      <h4><b><span className="border-bottom border-dark">Detalles</span></b></h4>
       <div className="row p-4 justify-content-around">
-        <div className="shadow p-3 mb-5 bg-white rounded col-md-5 mb-3" >
+        <div className="shadow p-3 mb-5 bg-white rounded col-md-5 mb-3" data-aos="fade-right" data-aos-duration="2000">
           <h2>
             <FaPhoneAlt />
           </h2>
           <h6>Ventas:</h6> 4495235532 <br/><br/>
           <h6>Bolsa de Trabajo</h6>  4494242223
         </div>
-        <div className="shadow p-3 mb-5 bg-white rounded col-md-5 mb-3">
+        <div className="shadow p-3 mb-5 bg-white rounded col-md-5 mb-3" data-aos="fade-left" data-aos-duration="2000">
           <h1>
             <MdEmail />
           </h1>

@@ -8,14 +8,19 @@ function Login() {
   return (
     <div className="container mt-3 mb-2">
       <div className="row d-flex justify-content-center">
-        <div className="col-md-6 mt-3 mb-3 p-3 rounded">
+        <div
+          className="col-md-6 mt-3 mb-3 p-3 rounded"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <Formulario ListOfQuestions={ListOfQuestions} />
         </div>
         <div className="row d-flex justify-content-center">
-                <div className="col-md-6 mt-3 mb-3 p-3 rounded">
-                    <ForgotLogin />
-                </div>
-            </div>
+          <div className="col-md-6 mt-3 mb-3 p-3 rounded">
+            <ForgotLogin />
+          </div>
+        </div>
       </div>
     </div>
   );
