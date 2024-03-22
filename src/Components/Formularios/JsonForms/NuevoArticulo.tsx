@@ -48,7 +48,7 @@ export async function NuevoArticulo() {
                         {
                             title: 'Categoría',
                             type: 'select',
-                            name: 'categoria',
+                            name: 'idcategoria',
                             options: categorias
                         },
                         {
@@ -57,7 +57,7 @@ export async function NuevoArticulo() {
                             name: 'nueva_categoria',
                             placeholder: "Escribe aquí",
                             max: 50,
-                            hideField: 'categoria',
+                            hideField: 'idcategoria',
                             condition: '0',
                         },
 
@@ -109,7 +109,6 @@ export async function NuevoArticulo() {
                             name: 'precio.indi',
                             hideField: 'medidas.indi',
                             condition: true
-
                         },
                         {
                             title: 'Individual: Precio FALSO',

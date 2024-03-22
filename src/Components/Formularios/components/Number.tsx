@@ -11,7 +11,10 @@ const Number = ({question, register}:Props) => {
           max={question.max || ""}
           min={question.min || ""}
           step={question.step || ""}
-          {...register(question.name)}
+          {...register(question.name, {
+            min: question.min,
+            valueAsNumber: true
+          })}
           placeholder={question.placeholder}
         />
       </div>
