@@ -28,7 +28,7 @@ export async function UploadImages(formData:any) {
 export async function GetIamges(id:number) {
     try {
         const response= await api.get('/servirimagenes.php?id=' + id);
-        console.log(response)
+        // console.log(response)
          return response
      } catch (error) {
          console.error( error);

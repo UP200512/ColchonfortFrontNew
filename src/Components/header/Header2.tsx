@@ -38,6 +38,20 @@ export default function Header2() {
     };
   }, []);
 
+// logout function
+
+  const token = localStorage.getItem('token');
+  const logout = () => {
+    if (token) {
+      if (window.confirm("Cerrar sesión")) {
+        localStorage.removeItem('token');
+        window.location.href = '/login'
+      }
+    }
+
+
+  }
+
 
   return (
     <>
@@ -98,7 +112,7 @@ export default function Header2() {
                     <AiOutlineSetting/> Configuración
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/" className="text-danger">
+                  <NavDropdown.Item onClick={logout} className="text-danger">
                     <AiOutlinePoweroff/>  Salir
                   </NavDropdown.Item>
                   

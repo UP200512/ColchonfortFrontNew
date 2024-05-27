@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { HiWindow } from 'react-icons/hi2';
 
 // Crea una instancia de Axios con la URL base
 const api = axios.create({
@@ -8,11 +9,11 @@ const api = axios.create({
 // Usa la instancia para realizar peticione
 
 export async function getProductos() {
-    try{
-        const res= await api.get('/productos')
+    try {
+        const res = await api.get('/productos')
         return res.data
     }
-    catch(error){
+    catch (error) {
         return error
     }
 }
@@ -26,12 +27,61 @@ export async function getCategoriaDelProducto() {
     }
 }
 
-export async function CreateProduct(data: any){
+export async function CreateProduct(data: any) {
     try {
         const res = await api.post('/productos', data);
+        window.location.href = "/productos/administrar/images/" + res.data.insertId
         return res;
     } catch (error) {
         console.log(error)
         throw error;
     }
 }
+
+
+
+export async function Acceder(data: any) {
+    try {
+        const res = await api.post('/login', data)
+
+
+        // setData(data)
+        console.log(res.data)
+        if (res.data.auth) {
+
+            localStorage.setItem('token', res.data.token);
+            localStorage.setItem('tipo', res.data.tipo);
+            window.location.href = '/'
+
+
+        } else {
+            alert("Credenciales incorrectas!");
+            return false
+        }
+
+
+    } catch (error) {
+        console.log(error)
+    }
+
+
+} 
+
+
+export async function CreateUser(data: any) {
+    try {
+        const res = await api.post('/usuarios', data);
+        if(res.status===200){
+            window.location.href = "/"
+        }else if(res.data.message=="repetido"){
+            alert("Error: este correo ya está en uso")
+        } 
+        
+        return res;
+    } catch (error) {
+        console.log(error)
+        throw error;
+    }
+}
+
+
