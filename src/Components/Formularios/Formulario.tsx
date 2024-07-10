@@ -60,7 +60,7 @@ function Formulario({ ListOfQuestions, actionSubmit, rutaOK }: FormularioProps,)
       .then((response: any) => {
         console.log(response.status);
         if (response.status === 200) {
-          window.location.href = "/productos/administrar/images/" + response.data.insertId
+          window.location.href = "/productos/administrar/" 
         }else setIsVisible(true)
         // Aquí puedes hacer algo con la respuesta si es necesario
       })
