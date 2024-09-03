@@ -6,7 +6,8 @@ const SelectInputs = ({ question, register }: Props) => {
      <b><label htmlFor={question.name} className='form-label'>{question.title}</label></b> 
       <select className="form-control m-1 shadow-sm p-1  bg-body rounded"
         name={question.name}
-        id={question.name}
+        defaultValue={question.value}
+        id={question.id}
         required={question.required===false? false : true}
         {...register(question.name)}
       >

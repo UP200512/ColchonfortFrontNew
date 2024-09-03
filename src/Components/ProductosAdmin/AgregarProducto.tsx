@@ -24,7 +24,7 @@ function AgregarProducto() {
         <div className="container mt-3 mb-2">
             <div className="row d-flex justify-content-center">
                 <div className="col-md-6 mt-3 mb-3 p-3 rounded">
-                    <Formulario ListOfQuestions={preguntas} actionSubmit={CreateProduct} />
+                    <Formulario ListOfQuestions={preguntas} actionSubmit={CreateProduct} rutaOK="/productos/administrar/images/" />
                 </div>
                 {/* ... (optional second col) */}
             </div>

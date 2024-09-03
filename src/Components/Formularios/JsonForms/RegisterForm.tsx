@@ -14,13 +14,13 @@ export function RegisterForm() {
                 {
                     title: 'Apellido Paterno',
                     type: 'text',
-                    name: 'apellido_paterno',
+                    name: 'apellido_p',
                     placeholder: "Ingresa tu apellido paterno"
                 },
                 {
                     title: 'Apellido Materno',
                     type: 'text',
-                    name: 'apellido_materno',
+                    name: 'apellido_m',
                     placeholder: "Ingresa tu apellido materno"
                 },
                 {
@@ -32,7 +32,7 @@ export function RegisterForm() {
                 {
                     title: 'Contraseña',
                     type: 'password',
-                    name: 'password',
+                    name: 'clave',
                     placeholder: "Ingresa tu contraseña"
                 },
                 {
@@ -40,7 +40,7 @@ export function RegisterForm() {
                     type: 'password',
                     name: 'password_validate',
                     placeholder: "Confirma tu contraseña",
-                    equalTo: 'password'
+                    equalTo: 'clave'
                 },
                 {
                     title: 'Dirección',

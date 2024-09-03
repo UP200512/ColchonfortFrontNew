@@ -8,7 +8,7 @@ const api = axios.create({
 
 
 export async function UploadImages(formData:any) {
-    console.log(formData)
+    // console.log(formData)
     try {
        const response= await api.post('/uploads.php', formData, {
             headers: {
@@ -28,7 +28,7 @@ export async function UploadImages(formData:any) {
 export async function GetIamges(id:number) {
     try {
         const response= await api.get('/servirimagenes.php?id=' + id);
-        console.log(response)
+        // console.log(response)
          return response
      } catch (error) {
          console.error( error);

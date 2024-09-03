@@ -17,9 +17,11 @@ const Checkbox = ({ question, register }: Props) => {
                         type={question.type || ''}
                         name={question.name || ''}
                         // required={question.required===false? false : true}
-                        id={question.name || ''}
+                        id={question.id || ''}
                         {...register(question.name)}
                         placeholder={option}
+                        // value={question.value}
+                        defaultChecked={question.value? true: false}
                     /><label htmlFor={question.name}>{option}</label>
                 </ div>
 

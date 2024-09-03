@@ -14,7 +14,7 @@ export function LoginForm() {
                 {
                     title: 'Contraseña',
                     type: 'password',
-                    name: 'password',
+                    name: 'clave',
                     placeholder: "Ingresa tu contraseña"
                 }
             ]

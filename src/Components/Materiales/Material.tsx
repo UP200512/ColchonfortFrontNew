@@ -1,5 +1,4 @@
 import React from "react";
-import AboutHistory from "../Information/AboutHistory";
 import MemoryFoamImg from "../../images/material1_memoryfoam.jpg"
 
 function Material() {

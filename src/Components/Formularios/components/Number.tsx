@@ -6,7 +6,8 @@ const Number = ({question, register}:Props) => {
         <input type={question.type}
         className="form-control m-1 shadow-sm p-1  bg-body rounded"
           name={question.name}
-          id={question.name}
+          id={question.id}
+          defaultValue={question.value}
           required={question.required===false? false : true}
           max={question.max || ""}
           min={question.min || ""}

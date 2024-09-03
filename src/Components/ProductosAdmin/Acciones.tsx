@@ -1,3 +1,4 @@
+import { IoMdAdd } from "react-icons/io";
 
 
 function Acciones() {
@@ -5,7 +6,7 @@ function Acciones() {
     <aside className="bg-light mb-3 border p-3">
     <h2>Acciones</h2>
     <form>
-        <button onClick={()=> window.location.href = `/productos/administrar/nuevo` } type="button" className="btn btn-outline-primary">Agregar producto</button>
+        <button onClick={()=> window.location.href = `/productos/administrar/nuevo` } type="button" className="btn btn-outline-primary"><IoMdAdd /> || Agregar producto</button>
     </form>
 </aside>
   )

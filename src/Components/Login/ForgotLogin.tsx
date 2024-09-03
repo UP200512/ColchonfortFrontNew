@@ -9,7 +9,7 @@ function ForgotLogin() {
         <a className="text-decoration-underline" href="">
           ¿Olvidaste tu contraseña?
         </a>
-        <a className="text-decoration-underline" href="">
+        <a className="text-decoration-underline" href="/registrate">
           ¿Aun no te has registrado?
         </a>
       </div>

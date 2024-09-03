@@ -29,38 +29,42 @@ export async function NuevoArticulo() {
                             title: 'Nombre del producto',
                             type: 'text',
                             name: 'nombre',
+                            id: 'nombre',
                             placeholder: "Nombre del nuevo producto"
                         },
                         {
                             title: 'Descripcion corta',
                             type: 'text',
-                            name: 'desripcion_corta',
+                            name: 'descripcion_corta',
+                            id: 'descripcion_corta',
                             max: 100,
                             placeholder: "Escribe una pequeña descripción"
                         },
                         {
                             title: 'Descripción larga',
                             type: 'textarea',
-                            name: 'desripcion_larga',
+                            name: 'descripcion_larga',
+                            id: 'descripcion_larga',
                             placeholder: "Aqui puedes extender las mejores caraterísticas del producto",
-                            max: 500,
+                            max: 500
                         },
                         {
                             title: 'Categoría',
                             type: 'select',
                             name: 'idcategoria',
+                            id: 'idcategoria',
                             options: categorias
                         },
                         {
                             title: 'Nueva Categoria',
                             type: 'text',
                             name: 'nueva_categoria',
+                            id: 'nueva_categoria',
                             placeholder: "Escribe aquí",
                             max: 50,
                             hideField: 'idcategoria',
-                            condition: '0',
+                            condition: '0'
                         },
-
                         {
                             title: 'Medidas disponibles',
                             type: 'table',
@@ -69,44 +73,38 @@ export async function NuevoArticulo() {
                                     title: '',
                                     type: 'checkbox',
                                     name: 'medidas.indi',
-                                    options: [
-                                        'Individual'
-                                    ]
+                                    id: 'medidas_indi',
+                                    options: ['Individual']
                                 },
                                 {
                                     title: '',
                                     type: 'checkbox',
                                     name: 'medidas.matri',
-                                    options: [
-                                        'Matrimonial'
-                                    ]
+                                    id: 'medidas_matri',
+                                    options: ['Matrimonial']
                                 },
                                 {
                                     title: '',
                                     type: 'checkbox',
                                     name: 'medidas.queen',
-                                    options: [
-                                        'Queen Size'
-                                    ]
+                                    id: 'medidas_queen',
+                                    options: ['Queen Size']
                                 },
                                 {
                                     title: '',
                                     type: 'checkbox',
                                     name: 'medidas.king',
-                                    options: [
-                                        'king Size'
-                                    ]
-                                },
-
+                                    id: 'medidas_king',
+                                    options: ['King Size']
+                                }
                             ]
                         },
-
-
                         {
                             title: 'Individual: Precio REAL al consumidor',
                             placeholder: "Precio individual",
                             type: 'number',
                             name: 'precio.indi',
+                            id: 'precio_indi',
                             hideField: 'medidas.indi',
                             condition: true
                         },
@@ -115,15 +113,16 @@ export async function NuevoArticulo() {
                             placeholder: "Precio anterior para reflejar promoción",
                             type: 'number',
                             name: 'precio_falso.indi',
+                            id: 'precio_falso_indi',
                             hideField: 'medidas.indi',
                             condition: true
-
                         },
                         {
                             title: 'Matrimonial: Precio REAL al consumidor',
                             placeholder: "Precio matrimonial",
                             type: 'number',
                             name: 'precio.matri',
+                            id: 'precio_matri',
                             hideField: 'medidas.matri',
                             condition: true
                         },
@@ -132,16 +131,16 @@ export async function NuevoArticulo() {
                             placeholder: "Precio anterior para reflejar promoción",
                             type: 'number',
                             name: 'precio_falso.matri',
+                            id: 'precio_falso_matri',
                             hideField: 'medidas.matri',
                             condition: true
-
                         },
-
                         {
                             title: 'Queen Size: Precio REAL al consumidor',
                             placeholder: "Precio Queen Size",
                             type: 'number',
                             name: 'precio.queen',
+                            id: 'precio_queen',
                             hideField: 'medidas.queen',
                             condition: true
                         },
@@ -150,15 +149,16 @@ export async function NuevoArticulo() {
                             placeholder: "Precio anterior para reflejar promoción",
                             type: 'number',
                             name: 'precio_falso.queen',
+                            id: 'precio_falso_queen',
                             hideField: 'medidas.queen',
                             condition: true
-
                         },
                         {
                             title: 'King Size: Precio REAL al consumidor',
                             placeholder: "Precio King Size",
                             type: 'number',
                             name: 'precio.king',
+                            id: 'precio_king',
                             hideField: 'medidas.king',
                             condition: true
                         },
@@ -167,14 +167,13 @@ export async function NuevoArticulo() {
                             placeholder: "Precio anterior para reflejar promoción",
                             type: 'number',
                             name: 'precio_falso.king',
+                            id: 'precio_falso_king',
                             hideField: 'medidas.king',
                             condition: true
-
-                        },
-
-
+                        }
                     ]
-                },
+                }
+                
 
             ];
         } else {

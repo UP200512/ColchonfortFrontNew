@@ -1,19 +1,14 @@
 import { CiSaveUp2 } from "react-icons/ci";
 import SingleQuestion from "./components/SingleQuestion";
-import { getCategoriaDelProducto } from "../../axios/http";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useForm } from 'react-hook-form';
 import cargando from '../../images/cargando.gif'
-interface optionsSelect {
 
-  idcategoria: number,
-  nombre: string,
-  descripcion: string
-
-}
 export interface Question {
   type?: string;
   name?: string;
+  value: any;
+  id?: string;
   title?: string;
   placeholder?: string;
   required?: boolean;
@@ -39,11 +34,10 @@ export interface Seccion {
 interface FormularioProps {
   ListOfQuestions: Seccion[]; // Asegúrate de importar el tipo Seccion y Question desde tu archivo types.ts
   actionSubmit: Function;
-  rutaOK: string;
 }
 
 
-function Formulario({ ListOfQuestions, actionSubmit, rutaOK }: FormularioProps,) {
+function Formulario({ ListOfQuestions, actionSubmit }: FormularioProps,) {
   // const [categorias, setCategorias] = useState([]);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -55,13 +49,12 @@ function Formulario({ ListOfQuestions, actionSubmit, rutaOK }: FormularioProps,)
   // const ListOfQuestions = TutorFormData();
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const onSubmit = handleSubmit((data) => {
-    console.log(data);
+    // console.log(data);
     actionSubmit(data)
       .then((response: any) => {
-        console.log(response.status);
-        if (response.status === 200) {
-          window.location.href = "/productos/administrar/" 
-        }else setIsVisible(true)
+        if(!response){
+          setIsVisible(true)
+        }
         // Aquí puedes hacer algo con la respuesta si es necesario
       })
       .catch((error: any) => {
